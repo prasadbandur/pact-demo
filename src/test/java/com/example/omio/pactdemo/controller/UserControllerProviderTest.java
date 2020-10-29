@@ -23,6 +23,7 @@ import java.util.Optional;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT,
         properties = "server.port=8080")
 @Provider("userservice")
+//TODO: Currently below pact file is read from local directory, need to check if it can be read from some online JSON repo.
 @PactFolder("/Users/renukabrandur/IdeaProjects/pact-demo/src/test/resources/pacts/")
 public class UserControllerProviderTest {
 
